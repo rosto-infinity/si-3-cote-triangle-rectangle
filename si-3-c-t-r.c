@@ -186,3 +186,260 @@ int main() {
     }
     return 0;
 }
+
+
+Voici l'algorithme écrit de manière structurée, incluant une procédure pour vérifier si trois longueurs peuvent former un triangle rectangle :
+
+Algorithme : Vérifier si trois côtés peuvent former un triangle rectangle
+Début
+
+Procédure EstTriangleRectangle(a, b, c)
+
+Entrées : Trois longueurs 
+�
+a, 
+�
+b, 
+�
+c
+Sortie : Booléen (Vrai si les longueurs peuvent former un triangle rectangle, Faux sinon)
+Début de la procédure
+Si 
+�
+a est le plus grand, alors
+hypot
+e
+ˊ
+nuse
+←
+�
+hypot 
+e
+ˊ
+ nuse←a
+c
+o
+ˆ
+t
+e
+ˊ
+1
+←
+�
+c 
+o
+ˆ
+ t 
+e
+ˊ
+ 1←b
+c
+o
+ˆ
+t
+e
+ˊ
+2
+←
+�
+c 
+o
+ˆ
+ t 
+e
+ˊ
+ 2←c
+Sinon, si 
+�
+b est le plus grand, alors
+hypot
+e
+ˊ
+nuse
+←
+�
+hypot 
+e
+ˊ
+ nuse←b
+c
+o
+ˆ
+t
+e
+ˊ
+1
+←
+�
+c 
+o
+ˆ
+ t 
+e
+ˊ
+ 1←a
+c
+o
+ˆ
+t
+e
+ˊ
+2
+←
+�
+c 
+o
+ˆ
+ t 
+e
+ˊ
+ 2←c
+Sinon
+hypot
+e
+ˊ
+nuse
+←
+�
+hypot 
+e
+ˊ
+ nuse←c
+c
+o
+ˆ
+t
+e
+ˊ
+1
+←
+�
+c 
+o
+ˆ
+ t 
+e
+ˊ
+ 1←a
+c
+o
+ˆ
+t
+e
+ˊ
+2
+←
+�
+c 
+o
+ˆ
+ t 
+e
+ˊ
+ 2←b
+Si 
+hypot
+e
+ˊ
+nuse
+2
+=
+c
+o
+ˆ
+t
+e
+ˊ
+1
+2
++
+c
+o
+ˆ
+t
+e
+ˊ
+2
+2
+hypot 
+e
+ˊ
+ nuse 
+2
+ =c 
+o
+ˆ
+ t 
+e
+ˊ
+ 1 
+2
+ +c 
+o
+ˆ
+ t 
+e
+ˊ
+ 2 
+2
+  alors
+Retourner Vrai
+Sinon
+Retourner Faux
+Fin de la procédure
+Programme Principal
+
+Lire 
+�
+a
+Lire 
+�
+b
+Lire 
+�
+c
+Si EstTriangleRectangle(a, b, c) alors
+Afficher "Les longueurs peuvent former un triangle rectangle."
+Sinon
+Afficher "Les longueurs ne peuvent pas former un triangle rectangle."
+Fin
+
+Exemple d'Exécution
+Entrées : 
+�
+=
+3
+a=3, 
+�
+=
+4
+b=4, 
+�
+=
+5
+c=5
+Appel de la procédure : EstTriangleRectangle(3, 4, 5)
+Vérification : 
+5
+2
+=
+3
+2
++
+4
+2
+5 
+2
+ =3 
+2
+ +4 
+2
+  → 
+25
+=
+9
++
+16
+25=9+16 (vrai)
+Sortie : "Les longueurs peuvent former un triangle rectangle."
+Cet algorithme est structuré et utilise une procédure distincte pour encapsuler la logique de vérification, ce qui le rend modulaire et facile à comprendre.
